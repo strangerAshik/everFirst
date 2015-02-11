@@ -1,0 +1,167 @@
+header {
+  background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+padding: 12px 5px 6px 0;
+    }
+
+#UserOption, #options {
+    cursor: pointer
+    }
+
+#UserOption {
+    background: none repeat scroll 0 0 #e04444;
+    left: 259px;
+    position: relative;
+    width: 90px
+    }
+
+#options {
+    display: none;
+    margin-top: 9px;
+    position: absolute;
+    right: 0
+    }
+
+#options ul li {
+    background: none repeat scroll 0 0 #2989d8;
+    border-bottom: 1px dotted #fff;
+    -moz-box-shadow: 0 1px 7px #fff;
+    -webkit-box-shadow: 0 1px 7px #fff;
+    box-shadow: 0 1px 7px #fff;
+    list-style: none outside none;
+    padding: 2px 13px;
+    text-align: left
+    }
+
+#options ul li:hover {
+    background: none repeat scroll 0 0 #003F86
+    }
+
+#options ul li a {
+    color: #e3ecf3;
+    padding: 0 78px 0 0;
+    text-decoration: none
+    }
+
+.companyLogo {
+    margin-left: 25px;
+    width: 500px;
+    float: left
+    }
+
+.companyLogo p img {
+    height: 35px
+    }
+
+.companyLogo p span {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: lighter;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15)
+    }
+
+.accmanager ul li a {
+    padding: 13px 27px 14px !important
+    }
+
+.loginInfo {
+    color: #e3ecf3;
+    float: right;
+    font-style: italic;
+    font-weight: lighter;
+    margin-right: 25px;
+    position: relative;
+    text-align: right;
+    width: 350px
+    }
+
+.loginInfo p span {
+    color: #FFF;
+    font-style: italic;
+    font-weight: lighter
+    }
+
+.activeTab {
+    background: none repeat scroll 0 0 #97C5F8;
+    border: 2px solid #FFF;
+    font-size: 14px
+    }
+
+#li_width {
+    margin: 19px 100px;
+    width: auto
+    }
+
+.nav {
+    float: left;
+    margin: 18px 24px;
+    width: 910px
+    }
+
+nav ul li {
+    float: left;
+    list-style: none outside none
+    }
+
+nav ul li a {
+  background: none repeat scroll 0 0 #fff;
+border: 2px solid #97c5f8;
+color: #000;
+font-size: 12px;
+font-style: italic;
+font-weight: bold;
+margin: 0 1px;
+padding: 4px;
+text-decoration: none;
+    }
+
+nav ul li *:hover {
+    background: none repeat scroll 0 0 #97C5F8;
+    border: 2px solid #FFF
+    }
+
+nav ul li a img {
+    margin-right: 9px
+    }
+
+.onclick-menu {
+    display: inline-block;
+    position: relative;
+    float: right
+    }
+
+.onclick-menu:before {
+    color: white;
+    content: "User Options"
+    }
+
+.onclick-menu:focus {
+    /* clicking on label should toggle the menu */
+    pointer-events: none
+    }
+
+.onclick-menu:focus .onclick-menu-content {
+    /*  opacity is 1 in opened state (see below) */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    visibility: visible;
+    color: white;
+    /* don't let pointer-events affect descendant elements */
+    pointer-events: auto
+    }
+
+.onclick-menu-content {
+    position: absolute;
+    z-index: 1;
+    /* use opacity to fake immediate toggle */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    visibility: hidden;
+    -moz-transition: visibility 0.5s;
+    -o-transition: visibility 0.5s;
+    -webkit-transition: visibility 0.5s;
+    transition: visibility 0.5s;
+    list-style-type: none;
+    color: white
+    }

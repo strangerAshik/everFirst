@@ -1,0 +1,5 @@
+11 February 2015:
+	Bug fixed: Vehicle maintenance  
+		changes in file: managingDirectorHomePage.php, accountsManagerHomepage.php,php_transaction_input.php,php_output.php
+	Bug: Vehicle maintenance input type value goes to amount field 
+	 
