@@ -1146,7 +1146,7 @@ $totalWoingMoney=0;
 
 }
 function advanceInfo(){
-$query="SELECT `id`, `date`, `purpose`, `invoice_no`, `work_order`, `voucher`, `amount`, `paid_amount`, `last_paid`, `pay_to`, `mobile`, `address`, `note`, `loan_transaction_id`, `from_bank`, `from_account`, `store_bank`, `store_account`, `cheque_no`, `utility_bill_no`, `utility_type`, `vehicle_no`, `vehicle_cost_type`, `grand_total`, `sale_commision_percentage`, `sale_comission_amount` FROM `debit_transaction` WHERE `amount`> `paid_amount`";
+$query="SELECT `id`, `date`, `purpose`, `invoice_no`, `work_order`, `voucher`, `amount`, `paid_amount`, `last_paid`, `pay_to`, `mobile`, `address`, `note`, `loan_transaction_id`, `from_bank`, `from_account`, `store_bank`, `store_account`, `cheque_no`, `utility_bill_no`, `utility_type`, `vehicle_no`, `vehicle_cost_type`, `grand_total`, `sale_commision_percentage`, `sale_comission_amount` FROM `debit_transaction` WHERE `amount`> `paid_amount` AND `purpose`='advance payment'";
 if($query_run=mysql_query($query)){
 	if(mysql_num_rows($query_run)==NULL){echo "<tr><td >No Advance Issue Exist!! :)!!</td></tr>";}
 	else{	
